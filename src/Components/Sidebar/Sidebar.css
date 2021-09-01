@@ -1,0 +1,81 @@
+.sideBar {
+  width: 300px;
+  padding: 30px 0;
+}
+.sideBar .item {
+  display: flex;
+  align-items: center;
+  padding: 8px 20px;
+  transition: linear ease-in 0.3s;
+  color: #808191;
+  font: 14px poppins;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.sideBar .item:hover {
+  background-color: rgba(15, 114, 203, 1);
+  color: #fff;
+}
+
+.sideBar .item .circle {
+  height: 32px;
+  width: 32px;
+  border-radius: 12px;
+  background-color: var(--primaryWhite);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+}
+.sideBar .item:hover .circle {
+  background-color: #fff;
+}
+.sideBar .itemActive {
+  color: #fff;
+  font-family: poppinsSb;
+}
+.sideBar .itemActive .circle {
+  background-color: var(--primaryDarkBlue);
+}
+.sideBar .itemActive:hover .circle {
+  background-color: var(--primaryDarkBlue);
+}
+
+/* mobile css */
+.sideBarM {
+  width: 230px;
+  padding: 40px 20px;
+  box-shadow: var(--shadow);
+  height: 100%;
+  top: 0;
+  position: absolute;
+  transform: translateX(-100vw);
+  transition-delay: 0.6s;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  background-color: var(--backgroudColor);
+  z-index: 9999;
+}
+.sideBarMActive {
+  transform: translateX(0px) !important;
+}
+.sideBarModal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition-delay: 0.6s;
+  -webkit-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 999;
+}
+.sideBarModalActive {
+  opacity: 1;
+  visibility: visible;
+}

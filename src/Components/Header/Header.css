@@ -1,0 +1,103 @@
+.Navbar {
+  background: rgba(31, 29, 43, 1);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+.input-text {
+  outline: none;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  color: white;
+  border: none;
+  padding-bottom: 6px;
+  width: 100%;
+  padding-left: 20px;
+  padding-top: 6px;
+  font-size: 12px;
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.1);
+}
+
+.headerButton {
+  padding: 6px 32px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.headerButtonActive {
+  background: rgba(15, 114, 203, 1);
+}
+.twobtn .tv {
+  margin-right: -18px;
+}
+
+.contactnoti img {
+  padding-left: 20px;
+  height: 20px;
+}
+.search_bar {
+  width: 35%;
+  display: flex;
+  position: relative;
+}
+.searchimg {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+}
+.contactnoti {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* side bar active toggle button css */
+/* Button Css */
+.dashboardNavaBarButton {
+  position: relative;
+  transform: translateZ(100px);
+  outline: none;
+  -webkit-tap-highlight-color: transparent;
+  width: 43px;
+  padding: 10px;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.dashboardNavaBarButton:hover {
+  transform: scale(1.2);
+}
+.dashboardNavBarLine {
+  display: block;
+  height: 2.5px;
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 4px;
+  border-radius: 2px;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    opacity 0.2s ease-out;
+  transform: translateZ(0);
+}
+
+.activeSideBar > .dashboardNavBarLine1,
+.activeSideBar:hover > .dashboardNavBarLine1 {
+  transform: translateY(6px) rotateZ(-135deg);
+  background-color: #fff !important;
+}
+.activeSideBar > .dashboardNavBarLine2,
+.activeSideBar:hover > .dashboardNavBarLine2 {
+  opacity: 0;
+}
+.activeSideBar > .dashboardNavBarLine3,
+.activeSideBar:hover > .dashboardNavBarLine3 {
+  transform: translateY(-6px) rotateZ(135deg);
+  background-color: #fff !important;
+}

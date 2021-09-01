@@ -1,0 +1,124 @@
+:root {
+  --primaryWhite: rgba(255, 255, 255, 0.1);
+  --backgroudColor: rgba(31, 29, 43, 1);
+  --primaryDarkBlue: #0148b4;
+  --kBrown: #353440;
+}
+
+/* adding fonts */
+@font-face {
+  font-family: "poppins";
+  src: url(assets//fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: "poppinsMd";
+  src: url(assets//fonts/Poppins-Medium.ttf);
+}
+@font-face {
+  font-family: "poppinsSb";
+  src: url(assets//fonts/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: "poppinsBd";
+  src: url(assets/fonts/Poppins-Bold.ttf);
+}
+
+/* common css */
+
+body {
+  background: var(--backgroudColor);
+}
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+}
+.poppins {
+  font-family: poppins;
+}
+.poppinsMd {
+  font-family: poppinsMd;
+}
+.poppinsSb {
+  font-family: poppinsSb;
+}
+.poppinsBd {
+  font-family: poppinsBd;
+}
+.centerDiv {
+  width: fit-content;
+  margin: 0 auto;
+}
+.centerFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexCenter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexBetween {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.flexBetweenCenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flexNowrap {
+  flex-wrap: nowrap;
+}
+.alignStart {
+  align-items: flex-start;
+}
+
+/* main css */
+.mainDiv {
+  display: flex;
+}
+
+.contentDiv {
+  width: 100%;
+  padding: 40px 20px;
+}
+
+.secTitle {
+  font: 28px poppinsMd;
+  color: #fff;
+}
+.linkText {
+  color: #0f72cb;
+  font: 13px poppins;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.pointer {
+  cursor: pointer;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
